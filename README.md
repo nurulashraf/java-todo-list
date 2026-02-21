@@ -26,28 +26,31 @@ This app lets you manage your tasks directly from the terminal: add new tasks, v
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/nurulashraf/java-todo-list.git
+   git clone (https://github.com/PrakharSrivastava01/java-todo-list/)
    cd java-todo-list
    ```
 
 2. Compile and run:
    ```bash
-   cd src
-   javac -d . ToDoList.java
-   java todolist.ToDoList
-   ```
+   COPY src/ToDoList.java todolist/
+   javac todolist/ToDoList.java
 
 ### Run with Docker
 
 1. Build the image:
    ```bash
-   docker build -t java-todolist .
+   docker build -t java-todolist.
    ```
 
 2. Run the container (interactive mode required for console input):
    ```bash
    docker run -it java-todolist
    ```
+
+## Screenshot ##
+
+<img width="1206" height="973" alt="Screenshot 2026-02-21 172138" src="https://github.com/user-attachments/assets/aa840ee3-184e-4241-abf9-79917868315b" />
+
 
 ---
 
