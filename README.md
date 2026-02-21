@@ -26,7 +26,7 @@ This app lets you manage your tasks directly from the terminal: add new tasks, v
 
 1. Clone this repository:
    ```bash
-   git clone (https://github.com/PrakharSrivastava01/java-todo-list/)
+   git clone https://github.com/nurulashraf/java-todo-list.git
    cd java-todo-list
    ```
 
