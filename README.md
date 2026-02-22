@@ -19,7 +19,7 @@ This app lets you manage your tasks directly from the terminal: add new tasks, v
 
 ### Prerequisites
 
-- Java JDK 8 or above
+- Java JDK 14 or above
 - A text editor or IDE (like VS Code, IntelliJ IDEA, or Eclipse)
 
 ### How to Run
