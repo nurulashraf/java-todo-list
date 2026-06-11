@@ -1,5 +1,4 @@
 package todolist;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -33,11 +32,12 @@ public class ToDoList {
                 case 1 -> addTask();
                 case 2 -> viewTasks();
                 case 3 -> markTaskCompleted();
-                case 4 -> deleteTask();
-                case 5 -> System.out.println("Goodbye!");
+                case 4 -> markAllTaskCompleted();
+                case 5 -> deleteTask();
+                case 6 -> System.out.println("Goodbye!");
                 default -> System.out.println("Invalid option. Try again.");
             }
-        } while (choice != 5);
+        } while (choice != 6);
     }
 
     private static void printMenu() {
@@ -45,8 +45,9 @@ public class ToDoList {
         System.out.println("1. Add a Task");
         System.out.println("2. View All Tasks");
         System.out.println("3. Mark Task as Completed");
-        System.out.println("4. Delete a Task");
-        System.out.println("5. Exit");
+        System.out.println("4. Mark All Tasks as Completed");
+        System.out.println("5. Delete a Task");
+        System.out.println("6. Exit");
     }
 
     private static void addTask() {
@@ -78,7 +79,13 @@ public class ToDoList {
             System.out.println("Invalid task number.");
         }
     }
-
+    private static void markAllTaskCompleted(){
+        if(tasks.isEmpty())return;
+        for(int i=0;i<tasks.size();i++){
+            tasks.get(i).isDone = true;
+        }
+        System.out.println("Completed!");
+    }
     private static void deleteTask() {
         viewTasks();
         if (tasks.isEmpty()) return;
